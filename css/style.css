@@ -1,0 +1,88 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#slider
+{
+	position: absolute;
+	width: 40%;
+	height: 300px;
+	top: 10%;
+	left: 30%;
+	overflow: hidden;	
+}
+
+#slider .part
+{
+	position: absolute;
+}
+
+#slider .part:first-child
+{
+	width: 100%;
+	height: 300px;
+}
+#slider .part:nth-child(2)
+{
+	width: 100%;
+	height: 40px;
+	top: 260px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#slider .part:nth-child(2) div
+{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	cursor: pointer;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	
+}
+
+#slider .part:nth-child(2) div:nth-child(1)
+{
+	left: 35%;
+}
+#slider .part:nth-child(2) div:nth-child(2)
+{
+	left: 45%;
+}
+#slider .part:nth-child(2) div:nth-child(3)
+{
+	left: 55%;
+}
+
+#slider .part:nth-child(1) div
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	background-size: cover;
+}
+
+#slider .part:nth-child(1) div:nth-child(1)
+{
+	background-image: url('../img/img_1.png');
+}
+
+#slider .part:nth-child(1) div:nth-child(2)
+{
+	left: 100%;
+	background-image: url('../img/img_2.png');
+}
+
+#slider .part:nth-child(1) div:nth-child(3)
+{
+	left: 200%;
+	background-image: url('../img/img_3.png') !important;
+}
+.selected
+{
+	background-color: rgba(255,255,255,0.5);
+	-webkit-transition:all ease .5s;
+}
